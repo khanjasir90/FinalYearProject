@@ -19,8 +19,19 @@
   },
   "homepage": "https://github.com/khanjasir90/FinalYearProject#readme",
   "dependencies": {
+    "@truffle/contract": "^4.6.9",
+    "cores": "^0.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "nodemon": "^2.0.20"
+    "fs": "^0.0.1-security",
+    "ipfs-api": "^26.1.2",
+    "ipfs-http-client": "^48.1.2",
+    "ipfs-mini": "^1.1.5",
+    "multer": "^1.4.5-lts.1",
+    "nft.storage": "^7.0.0",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "tesseract.js": "^4.0.0",
+    "web3": "^1.7.1"
   }
 }
