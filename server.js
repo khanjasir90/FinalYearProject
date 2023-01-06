@@ -9,9 +9,15 @@ require('./db_config.js');
 // const web3 = provider.web3;
 // const instance = contract.initContract();
 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
+
 //const uploadRoute = require('./api/routes/upload');
+const userRoute = require('./api/routes/user');
+
 
 //app.use('/upload', uploadRoute);
+app.use('/api', userRoute);
 
 app.get('/test',
     (req, res, next) => {
