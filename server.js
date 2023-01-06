@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
-
+require('./db_config.js');
 // const Contract = new require("./Contract");
 // const Provider = new require("./Provider");
 // const contract = new Contract();
@@ -9,9 +9,9 @@ require('dotenv').config();
 // const web3 = provider.web3;
 // const instance = contract.initContract();
 
-const uploadRoute = require('./api/routes/upload');
+//const uploadRoute = require('./api/routes/upload');
 
-app.use('/upload', uploadRoute);
+//app.use('/upload', uploadRoute);
 
 app.get('/test',
     (req, res, next) => {
