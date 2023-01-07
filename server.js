@@ -2,6 +2,15 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 require('./db_config.js');
+const cors = require('cors');
+
+const corsOptions = {
+    origin: "http://localhost:3000",
+    optionSuccessStatus: 200,
+}
+
+app.use(cors(corsOptions));
+
 // const Contract = new require("./Contract");
 // const Provider = new require("./Provider");
 // const contract = new Contract();
